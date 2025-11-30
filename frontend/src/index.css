@@ -1,0 +1,74 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--bg-gradient: linear-gradient(
+		0deg,
+		rgba(2, 11, 40, 1) 0%,
+		rgba(23, 35, 70, 1) 100%
+	);
+	--box-white: rgba(255, 248, 231, 0.8);
+	--font-color-white: #f8f8f8;
+	--font-color-dark: #020b28;
+
+	--header-size: 32px;
+	--menu-item: 16px;
+	--body-text: 12px;
+	--spacing-wide: 0.08em;
+}
+
+h1 {
+	font-family: 'anton';
+	font-size: var(--header-size);
+	letter-spacing: var(--spacing-wide);
+	color: var(--font-color-white);
+	margin-top: 3.5em;
+	margin-bottom: 1em;
+	font-weight: 500;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+}
+
+@font-face {
+	font-family: 'anton';
+	src: url('./assets/Anton.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FjallaOne';
+	src: url('./assets/FjallaOne.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MerriweatherSans';
+	src: url('./assets/MerriweatherSans.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+html {
+  background: var(--bg-gradient);
+	height: 100%;
+}
+
+.app {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.forrest {
+  position: fixed; 
+  bottom: 0;
+  width: 100%;
+  opacity: 0.2;
+  z-index: -1;
+}
